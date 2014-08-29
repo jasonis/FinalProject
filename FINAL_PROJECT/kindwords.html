@@ -41,7 +41,7 @@
                 <a href='pricing.html'>Pricing</a>
             </li>
             <li>
-                <a href='contact.html'>Contact</a>
+                <a href='contact.html' data-toggle="modal" data-target="#myModal">Contact</a>
             </li>
         </ul>
         </div>
@@ -55,7 +55,7 @@
 	    <div class='col-md-6'>
 		<p>Amanda V.<br/>Teri did an excellent job on the pictures of my boys:) Taking pictures 
 		of a 3 month old and a 2 year is such a challenge in itself, but she 
-		made it easy! Teri was soo patience and took her time and allow us 
+		made it easy! Teri was soo patient and took her time and allow us 
 		time for breaks too! Her talent is amazing and I can't wait to have 
 		more family pictures taken by her. </p>
 		<img src='images/kind1.jpg' alt='girl smiling' class='img-responsive col-md-12'>
@@ -67,7 +67,7 @@
 	    </div>
 	    <div class='col-md-6'>
 		<p>Becky M.<br/>Oh my Teri! Those are so wonderful. Thank you for sharing your 
-		talent with us. I can’t wait to see the others. A million thank yous! </p>
+		talent with us. I can't wait to see the others. A million thank yous! </p>
 		<img src='images/kind3.jpg' alt='two girls laughing' class='img-responsive col-md-12'>
 		<p>Natasha L.<br/>...these pictures capture the fun. I love that! ! I think you could have 
 		been there 3 hours and not gotten the perfect posed picture--my 
@@ -78,6 +78,40 @@
 	</div><!-- end .row -->
 
     </section>
+    
+<!----- Modal ----->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">CONTACT ME</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="row">
+                <div class="form-group col-xs-12 floating-label-form-group">
+                  <input class="form-control" type="text" name="name" placeholder="NAME">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-12 floating-label-form-group">
+                  <input class="form-control" type="email" name="email" placeholder="EMAIL">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-12 floating-label-form-group">
+                  <textarea placeholder="MESSAGE" name="message" class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- end modal  -->
 
     <footer>
         <ul id='footerpages'>
@@ -88,7 +122,7 @@
                 <a href='faq.html'>FAQ</a>
             </li>
             <li>
-                <a href='contact.html'>Contact</a>
+                <a href='3' data-toggle="modal" data-target="#myModal">Contact</a>
             </li>
         </ul>
         

@@ -41,69 +41,12 @@
                 <a href='pricing.html'>Pricing</a>
             </li>
             <li>
-                <a href='contact.html'>Contact</a>
+                <a href='contact.html' data-toggle="modal" data-target="#myModal">Contact</a>
             </li>
         </ul>
         </div>
     </header>
-    <!--
-    <section class='pricingtable'>
-	<h2>Pricing</h2>
-	<table class='container-fluid'>
-	    <thead>
-		<tr>
-		    <th class='col-md-4'>ESSENTIALS</th>
-		    <th class='col-md-4'>PLUS</th>
-		    <th class='col-md-4'>LUXURY</th>
-		</tr>
-		<tr>
-		    <td class='col-md-4 essential'>WEDDING</td>
-		    <td class='col-md-4 plus'>WEDDING</td>
-		    <td class='col-md-4 luxury'>WEDDING</td>
-		</tr>
-	    </thead>
-	    <tbody>
-		<tr>
-		    <td class='col-md-4 essential'>Up to 3 hours</td>
-		    <td class='col-md-4 plus'>Up to 6 hours</td>
-		    <td class='col-md-4 luxury'>Up to 8 hours</td>
-		</tr>
-		<tr>
-		    <td class='col-md-4 essential'>Over 100 high res images <br/>on DVD</td>
-		    <td class='col-md-4 plus'>200 to 300 high res images <br/>on DVD</td>
-		    <td class='col-md-4 luxury'>300 to 400 high res images <br/>on DVD</td>
-		</tr>
-		<tr>
-		    <td class='col-md-4 essential'>(1) 11x14 Wall Print</td>
-		    <td class='col-md-4 plus'>(1) 11x14 &amp; (2) 8x10 Wall Prints</td>
-		    <td class='col-md-4 luxury'>(1) 16x20 Wall Print</td>
-		</tr>
-		<tr>
-		    <td class='col-md-4 essential'>Private Online Gallery</td>
-		    <td class='col-md-4 plus'>Private Online Gallery</td>
-		    <td class='col-md-4 luxury'>Private Online Gallery</td>
-		</tr>
-		<tr>
-		    <td class='col-md-4 essential'></td>
-		    <td class='col-md-4 plus'></td>
-		    <td class='col-md-4 luxury'>Complimentary Engagement Session</td>
-		</tr>
-	    </tbody>
-	    <tfoot>
-		<tr>
-		    <td class='col-md-4 essential'>&#36;997</td>
-		    <td class='col-md-4 plus'>&#36;1697</td>
-		    <td class='col-md-4 luxury'>&#36;1997</td>
-		</tr>
-		<tr>
-		    <td class='col-md-4 essential'><button type="submit" class="">SCHEDULE</button></td>
-		    <td class='col-md-4 plus'><button type="submit" class="">SCHEDULE</button></td>
-		    <td class='col-md-4 luxury'><button type="submit" class="">SCHEDULE</button></td>
-		</tr>
-	    </tfoot>
-	</table>
-    </section>
-    -->
+    
     <section id='pricingtable' class='container-fluid'>
 	<h2>PHOTO SESSION PRICING</h2>
 	<ul class='row'>
@@ -121,7 +64,7 @@
 		  <p>Private online gallery</p>
 		</div>
 		<div class="sign">
-		    <a href='#' class='button'><button type="submit" class="">SCHEDULE</button></a>
+		    <a href='#' class='button'><button type="submit" class="" data-toggle="modal" data-target="#myModal">SCHEDULE</button></a>
 		</div>
 	    </li>
 	    </div>
@@ -139,7 +82,7 @@
 		  <p>Private online gallery</p>
 		</div>
 		<div class="sign">
-		    <a href='#' class='button'><button type="submit" class="">SCHEDULE</button></a>
+		    <a href='#' class='button'><button type="submit" class="" data-toggle="modal" data-target="#myModal">SCHEDULE</button></a>
 		</div>
 	    </li>
 	    </div>
@@ -157,7 +100,7 @@
 		  <p>Private online gallery</p>
 		</div>
 		<div class="sign">
-		    <a href='#' class='button'><button type="submit" class="">SCHEDULE</button></a>
+		    <a href='#' class='button'><button type="submit" class="" data-toggle="modal" data-target="#myModal">SCHEDULE</button></a>
 		</div>
 	    </li>
 	    </div>
@@ -176,7 +119,7 @@
 		  <p>One location</p>
 		</div>
 		<div class="sign">
-		    <a href='#' class='button'><button type="submit" class="">SCHEDULE</button></a>
+		    <a href='#' class='button'><button type="submit" class="" data-toggle="modal" data-target="#myModal">SCHEDULE</button></a>
 		</div>
 	    </li>
 	    </div>
@@ -192,7 +135,7 @@
 		  <p>One location</p>
 		</div>
 		<div class="sign">
-		    <a href='#' class='button'><button type="submit" class="">SCHEDULE</button></a>
+		    <a href='#' class='button'><button type="submit" class="" data-toggle="modal" data-target="#myModal">SCHEDULE</button></a>
 		</div>
 	    </li>
 	    </div>
@@ -208,7 +151,7 @@
 		  <p>Unlimited locations</p>
 		</div>
 		<div class="sign">
-		    <a href='#' class='button'><button type="submit" class="">SCHEDULE</button></a>
+		    <a href='#' class='button'><button type="submit" class="" data-toggle="modal" data-target="#myModal">SCHEDULE</button></a>
 		</div>
 	    </li>
 	    </div>
@@ -252,9 +195,43 @@
 	    </li>
 	</ul>
 	<div class="sign">
-	    <a href='#' class='button'><button type="submit" class="">SCHEDULE</button></a>
+	    <a href='#' class='button'><button type="submit" class="" data-toggle="modal" data-target="#myModal">SCHEDULE</button></a>
 	</div>
     </section>
+    
+        <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">CONTACT ME</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="row">
+                <div class="form-group col-xs-12 floating-label-form-group">
+                  <input class="form-control" type="text" name="name" placeholder="NAME">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-12 floating-label-form-group">
+                  <input class="form-control" type="email" name="email" placeholder="EMAIL">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-12 floating-label-form-group">
+                  <textarea placeholder="MESSAGE" name="message" class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <footer>
         <ul id='footerpages'>
@@ -265,7 +242,7 @@
                 <a href='faq.html'>FAQ</a>
             </li>
             <li>
-                <a href='contact.html'>Contact</a>
+                <a href='#' data-toggle="modal" data-target="#myModal">Contact</a>
             </li>
         </ul>
         

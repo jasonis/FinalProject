@@ -41,7 +41,7 @@
                 <a href='pricing.html'>Pricing</a>
             </li>
             <li>
-                <a href='contact.html'>Contact</a>
+                <a href='contact.html' data-toggle="modal" data-target="#myModal">Contact</a>
             </li>
         </ul>
         </div>
@@ -94,10 +94,10 @@
             About Me
         </h2>
         <div class='row'>
-        <p class='col-md-4'>I’m a wife and mother to 2 little ones – Evan 
+        <p class='col-md-4'>I'm a wife and mother to 2 little ones - Evan 
         born in 2007 and Abigail born in 2010. I have 
         always had a love of photography as long as I 
-        can remember (thanks to good ole’ Dad!) and 
+        can remember (thanks to good ole' Dad!) and 
         as the years went on I kept studying and 
         practicing. Especially after Evan was born, that 
         was an awesome motivation to improve my 
@@ -105,17 +105,17 @@
         wanted to share with other people who would 
         benefit from it. After the birth of Abigail, we made 
         the decision for me to pursue my business, and 
-        it’s one of the best decisions we ever made. I 
-        haven’t looked back since. I love doing what I 
+        it's one of the best decisions we ever made. I 
+        haven't looked back since. I love doing what I 
         do!! I am quite the perfectionist when it comes 
         to my art, so you can rest assured that you will 
         get nothing but my best each and every time. </p>
         <div class='col-md-4'>
         <img class='img-responsive' src='images/selfie.jpg' alt='photo of teri'>
-        <p>I treat your photos the way I would my own – with 
+        <p>I treat your photos the way I would my own - with 
         care and attention to detail. I look at every client 
         as a new friend. I want to get to know you and 
-        what makes you "tick". I can’t wait to hear from 
+        what makes you "tick". I can't wait to hear from 
         you!!</p>
         </div>
         
@@ -150,6 +150,40 @@
         </ul>
         </div><!-- end .row -->
     </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">CONTACT ME</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="row">
+                <div class="form-group col-xs-12 floating-label-form-group">
+                  <input class="form-control" type="text" name="name" placeholder="NAME">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-12 floating-label-form-group">
+                  <input class="form-control" type="email" name="email" placeholder="EMAIL">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-12 floating-label-form-group">
+                  <textarea placeholder="MESSAGE" name="message" class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     
     <footer>
@@ -161,7 +195,7 @@
                 <a href='faq.html'>FAQ</a>
             </li>
             <li>
-                <a href='contact.html'>Contact</a>
+                <a href='#' data-toggle="modal" data-target="#myModal">Contact</a>
             </li>
         </ul>
         

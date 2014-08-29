@@ -69,6 +69,9 @@ footer {
 footer ul li a {
     color: #33a1c9;
     padding: 0 0 0 10px;
+    font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
+    font-size: 14pt;
+    font-weight: lighter;
 }
 
 #footerpages {
@@ -312,9 +315,76 @@ button {
     margin: 125px 7.3018081% 0 7.3018081%;
 }
 
+#kindwords  p {
+    font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
+    font-size: 14pt;
+    font-weight: lighter;
+    color: #979797;
+}
 
+/*===================================       FAQ       ==========================================*/
 
+ #faq {
+    margin: 125px 7.3018081% 0 7.3018081%;
+ }
+ 
+ #faq  ul li {
+    font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
+    font-size: 14pt;
+    font-weight: lighter;
+    color: #979797;
+}
 
+#faq ul li span {
+    font-weight: bold;
+}
+
+/*===================================       Contact       ===========================================*/
+
+.modal-content {
+    background-image: url('../images/contactTexture.jpg');
+    background-size: 100% 100%;
+    width: 760px;
+    border-radius: 0;
+}
+
+.modal-header span {
+    margin: 0 0 0 75%;
+    color: #000000;
+}
+
+.modal-title {
+    text-align: center;
+    margin-left: 25%;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-body {
+    border: none;
+}
+
+.modal-body form {
+    width: 400px;
+    margin-left: 23.68421%;
+}
+
+.form-control {
+    border-radius: none;
+}
+
+.modal-footer button {
+    background-color: #ffc638;
+    color: #323232;
+    border-radius: 0;
+    font-size: 24pt;
+}
+
+.modal-footer {
+    border: none;
+}
 
 
 
