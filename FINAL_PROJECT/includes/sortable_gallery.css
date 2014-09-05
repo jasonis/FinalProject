@@ -1,0 +1,99 @@
+/*  CSS Document - lynda.com  */
+
+body {
+    background-color: #000;
+    padding: 20px 10px 20px 30px;
+    font: 14px Arial;
+    color: #bd8a1e;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a, a:visited {
+    color: #00f;
+}
+
+img.background {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+.title {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 70px;
+    height: 100%;
+    background: #4d4d4d;
+}
+
+.gallery {
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.gallery .sorting {
+    margin: 0 0 15px 0;
+    border: 1px solid #6d4d2e;
+    background-color: rgba(109,77,46,.3);
+}
+
+.gallery .sorting span {
+    padding: 0 20px 0 0;
+    color: #6d4d2e;
+    font-style: italic;
+}
+
+.gallery .sorting div {
+    margin: 10px 0 10px 10px;
+}
+
+.gallery .sorting a {
+    color: #fff;
+    font-size: .85em;
+    text-decoration: none;
+    text-transform: 3px 20px 3px 20px;
+    background-color: red;
+}
+
+.gallery .sorting a:hover {
+    color: #e5aa2c;
+}
+
+.gallery .sorting a.selected {
+    color: #e5aa2c;
+    background-color: #ffc638;
+}
+
+.gallery .photos .thumbnail_container {
+    position: relative;
+    background-color: #777;
+}
+
+.gallery .photos .thumbnail_container a.thumbnail {
+    position: absolute;
+}
+
+.gallery .photos .thumbnail_container a.thumbnail img {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #6d4d2e;
+}
+
+
+/*  Vertical  */
+
+@media screen and (min-height:50px) and (max-height:520px){ }
+@media screen and (min-height:521px) and (max-height:700px){ }
+@media screen and (min-height:701px){ }
+
+/*  Horizontal  */
+
+@media screen and (min-width:50px) and (max-width:500px){ }
+@media screen and (min-width:501px) and (max-width:960px){ }
+@media screen and (min-width:960px){ }
+

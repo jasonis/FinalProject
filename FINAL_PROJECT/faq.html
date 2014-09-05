@@ -88,7 +88,14 @@
 	</div>
     </section>
     
-        <!-- Modal -->
+    <!-- style for captcha  -->
+    <script type="text/javascript">
+    var RecaptchaOptions = {
+       theme : 'blackglass'
+    };
+    </script>
+    
+    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -97,30 +104,47 @@
             <h4 class="modal-title" id="myModalLabel">CONTACT ME</h4>
           </div>
           <div class="modal-body">
-            <form>
+            <form id='loginForm' method="post" role='form'>
                 <div class="row">
-                <div class="form-group col-xs-12 floating-label-form-group">
-                  <input class="form-control" type="text" name="name" placeholder="NAME">
+                    <div class="form-group col-xs-12 floating-label-form-group">
+                      <input id='name' class="form-control" type="text" name="name" placeholder="NAME" required autofocus='on'>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-xs-12 floating-label-form-group">
-                  <input class="form-control" type="email" name="email" placeholder="EMAIL">
+                <div class="row">
+                    <div class="form-group col-xs-12 floating-label-form-group">
+                      <input id='email' class="form-control" type="email" name="email" placeholder="EMAIL" >
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-xs-12 floating-label-form-group">
-                  <textarea placeholder="MESSAGE" name="message" class="form-control" rows="5"></textarea>
+                <div class="row">
+                  <div class="form-group col-xs-12 floating-label-form-group">
+                    <textarea type="text" placeholder="MESSAGE" name="message" class="form-control" rows="5" required></textarea>
+                  </div>
                 </div>
-              </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 floating-label-form-group">                   
+                        <!-- script for captcha -->
+                        <script type="text/javascript"
+                          src="http://www.google.com/recaptcha/api/challenge?k=6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2">
+                        </script>
+                        <noscript>
+                           <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2"
+                              height="300" width="500" frameborder="0"></iframe><br>
+                           <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+                           </textarea>
+                           <input type="hidden" name="recaptcha_response_field"
+                               value="manual_challenge">
+                        </noscript>           
+                    </div>
+                </div><!-- end .row -->
+                <div class=" form-group modal-footer">
+                  <button type="submit" class="btn btn-primary">SUBMIT</button>
+                </div>
+            
             </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">SUBMIT</button>
-          </div>
-        </div>
-      </div>
-    </div>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
 
     <footer>
         <ul id='footerpages'>
@@ -137,13 +161,13 @@
         
         <ul id='footerlinks'>
             <li>
-                <a href='http://www.facebook.com'>Facebook</a>
+                <a href='http://www.facebook.com'><img src='images/facebook-square.jpg' width='25px' height='25px'/></a>
             </li>
             <li>
-                <a href='http://www.twitter.com'>Twitter</a>
+                <a href='http://www.pinterest.com'><img src='images/pinterest.jpg' width='25px' height='25px' /></a>
             </li>
             <li>
-                <a href='http://www.instagram.com'>Instagram</a>
+                <a href='http://www.instagram.com'><img src='images/instagram.jpg' width='25px' height='25px' /></a>
             </li>
         </ul>
         <p>2014 Eye Squared Media</p>
@@ -153,5 +177,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+<script type='text/javascript' src='js/main.js'></script>
 </body>
 </html>

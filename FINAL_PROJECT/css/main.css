@@ -1,6 +1,9 @@
 /*--- css for final project ---*/
 
-/*=======   GLOBAL   =======*/
+/*================================================================================================*/
+/*                                            Global                                              */
+/*================================================================================================*/
+
 html {
     background-color: #000;
     color: #fff;
@@ -16,6 +19,70 @@ body {
     src: url(../fonts/LANENAR_.ttf);
 }
 
+button:focus,
+a:focus {
+    outline:0;
+}
+
+.float {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.float:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+/* Float Shadow */
+.float-shadow {
+  display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.float-shadow:hover, .float-shadow:focus, .float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.float-shadow:hover:before, .float-shadow:focus:before, .float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
 /*=======   Header   =======*/
 header h1 {
     float: left;
@@ -28,13 +95,30 @@ header ul {
 
 header ul li {
     display: inline;
-    padding: 0 0 0 10px;
+    padding: 40px 0 40px 10px;
     font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
     font-size: 14pt;
 }
 
+header ul li a:visited {
+    border: none;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background-color: #2e2e2e;
+    text-decoration: none !important;
+    color: #e6e6e6;
+}
+
+header ul li a:active {
+    text-decoration: none;
+    color: #ffc638;
+}
+
 header ul li a {
     color: #33a1c9;
+    padding: 40px 5px 40px 5px;
 }
 
 header {
@@ -63,7 +147,9 @@ h1 span {
 footer {
     height: 50px;
     color: #4d4d4d;
-    padding-top: 20px;
+    padding: 20px 0 0 0;
+    margin-bottom: 25px;
+    
 }
 
 footer ul li a {
@@ -72,6 +158,11 @@ footer ul li a {
     font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
     font-size: 14pt;
     font-weight: lighter;
+}
+
+footer ul li a:hover {
+    text-decoration: none !important;
+    color: #e6e6e6;
 }
 
 #footerpages {
@@ -85,7 +176,7 @@ footer p {
 
 #footerlinks {
     float: right;
-    margin-right: 7.3018081%;
+    margin-right: 12.3018081%;
 }
 
 footer ul li {
@@ -93,10 +184,12 @@ footer ul li {
 }
 
 
-/*===================================       Index.html       ===================================*/
+/*================================================================================================*/
+/*                                            Index.html                                          */
+/*================================================================================================*/
 
 /*======= CTA Photo   =======*/
-#ctaphoto {
+#ctaphoto {    
     width: 100%;
     margin: 0;
 }
@@ -111,7 +204,7 @@ footer ul li {
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     color: #e6e6e6;
-    font-size: 30pt;
+    font-size: 2.5em;/*30pt*/
     text-align: center;
 }
 
@@ -165,33 +258,32 @@ h2 {
     margin-top: 0;
     text-align: center;
     font-family: 'font1', sans-serif;
-    font-size: 21pt;
+    font-size: 1.5em;/*21pt*/
     color: #ececec; 
 }
 
-/*===================================       Portfolio.html       ===================================*/
+/*================================================================================================*/
+/*                                            Portfolio.html                                      */
+/*================================================================================================*/
 
-#portfolio {
-    margin: 125px 7.3018081% 0 7.3018081%;
-}
 
-#portfolio .row {
-    margin-top: 10px;
-}
-
-#portfolio .col-md-3 {
-    padding: 0 5px 0 5px;
-}
 
 #portfolio ul {
-    text-align: center;
     margin: 0;
+    padding: 0 0 0 2.5%;
+}
+
+#portfolio ul:last-child {
     padding: 0;
 }
 
 #portfolio ul li {
     display: inline-block;
-    padding: 0 47px 0 47px;
+    padding-right: 9.5%;
+}
+
+#portfolio ul li:last-child{
+    padding-right: 0px;
 }
 
 #portfolio ul li button {
@@ -199,9 +291,69 @@ h2 {
     height: 25px;
     font-size: 10pt;
     border-radius: 5px;
+    background-color: #ffc638;
+    color: #323232;
+    border: none;
+    font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
 }
 
-/*===================================       Pricing.html       ===================================*/
+#portfolio ul li a button:hover {
+    background-color: #222;
+}
+
+#portfolio button:hover {
+    color: #ffc638;
+}
+
+
+/* new gallery  */
+img.background {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    padding: 0;
+    border: none;
+}
+
+
+
+.gallery {
+    width: 90%;
+    margin: 0px auto 100px auto;
+    position: relative;
+}
+
+.gallery .sorting div {
+    margin: 10px 0 10px 0px;
+}
+
+.gallery .photos {
+    margin: 0 0 0 20px;
+}
+
+.gallery .photos .thumbnail_container {
+    position: relative;
+}
+
+.gallery .photos .thumbnail_container a.thumbnail {
+    position: absolute;
+}
+
+.gallery .photos .thumbnail_container a.thumbnail img {
+    width: 292.5px;
+    height: 231.25px;
+}
+
+.showMe,
+.hideMe {
+    border: none;
+    padding: 0;
+}
+
+
+/*================================================================================================*/
+/*                                            Pricing.html                                        */
+/*================================================================================================*/
 
 #pricingtable {
     margin: 125px 7.3018081% 0 7.3018081%;
@@ -212,7 +364,7 @@ h2 {
 }
 
 #pricingtable .row {
-    padding: 0 0 25px 0;
+    padding: 0 0 1.73611% 0;/*25px*/
 }
 
 #pricingtable h3,
@@ -220,14 +372,18 @@ h2 {
     margin-top: 0;
     text-align: center;
     font-family: 'font1', sans-serif;
-    font-size: 21pt;
+    font-size: 2em;/*21pt*/
     color: #ececec; 
+}
+
+#pricingtable h4 {
+    color: #888;
 }
 
 ul li {
     color: #ebebeb;
     list-style-type: none;
-    font-size: 18pt;
+    font-size: 1.5em;/*18pt*/
 }
 
 .essential {
@@ -251,16 +407,16 @@ ul li {
 }
 
 .circle {
-  width:150px;
-  height:150px;
-  border-radius:150px;
-  font-size:40px;
-  color:#fff;
-  line-height:150px;
-  text-align:center;
-  background:#000000;
-  margin-left:125px;
-  margin-top:35px;
+    position: relative;
+    width:150px;
+    height:150px;
+    border-radius:150px;
+    font-size:40px;
+    color:#fff;
+    line-height:150px;
+    text-align:center;
+    background:#000000;
+    margin: 35px 30.56994% 0 30.56994%;/*125px 30.88%*/
 }
 
 .top {
@@ -270,28 +426,35 @@ ul li {
 
 .bottom {
     text-align: left;
-    margin: 40px 0 0 50px;
+    margin: 40px 0 10px 50px;
 }
 
 .bottom p {
-    padding: 0 25px 0 25px;
+    padding: 0 22% 0 22%;/*25px*/
+    font-size: 1em;
 }
 
-.sign {
-    margin: 0 0 0 100px;
-    padding: 0 0 25px 0;
-}
 
-button {
+
+#pricingtable button {
     text-align: center;
-    width: 200px;
+    width: 51.81347%;/*200px*/
     height: 50px;
     background-color: #ffc638;
     color: #323232;
     border: none;
     font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
-    font-size: 18pt;
+    font-size: 1.29em;/*18pt*/
     color: #323232;
+    bottom: 3.3333%;/*20px*/
+    position: absolute;
+    margin: 0 0 0 22%;/*100px*/
+    padding: 10px 0 25px 0;
+}
+
+#pricingtable button:hover {
+    background-color: #222;
+    color: #ececec;
 }
 
 .cyosubheading li {
@@ -309,7 +472,9 @@ button {
 }
 
 
-/*===================================       Kind Words       ===================================*/
+/*================================================================================================*/
+/*                                            KindWords.html                                      */
+/*================================================================================================*/
 
 #kindwords {
     margin: 125px 7.3018081% 0 7.3018081%;
@@ -322,7 +487,9 @@ button {
     color: #979797;
 }
 
-/*===================================       FAQ       ==========================================*/
+/*================================================================================================*/
+/*                                           FAQ.html                                             */
+/*================================================================================================*/
 
  #faq {
     margin: 125px 7.3018081% 0 7.3018081%;
@@ -339,7 +506,9 @@ button {
     font-weight: bold;
 }
 
-/*===================================       Contact       ===========================================*/
+/*================================================================================================*/
+/*                                             Contact                                            */
+/*================================================================================================*/
 
 .modal-content {
     background-image: url('../images/contactTexture.jpg');
@@ -358,11 +527,9 @@ button {
     margin-left: 25%;
 }
 
-.modal-header {
-    border: none;
-}
-
-.modal-body {
+.modal-header,
+.modal-body,
+.modal-footer {
     border: none;
 }
 
@@ -382,9 +549,50 @@ button {
     font-size: 24pt;
 }
 
-.modal-footer {
-    border: none;
+.modal-footer button:hover {
+    background-color: #323232;
 }
+
+#recaptcha_area {
+    margin-left: 20%;
+}
+
+/*================================================================================================*/
+/*                                             Media Queries                                      */
+/*================================================================================================*/
+
+/*  Vertical  */
+
+@media screen and (min-height:50px) and (max-height:520px){
+    
+}
+@media screen and (min-height:521px) and (max-height:700px){
+    
+}
+@media screen and (min-height:701px){
+    
+}
+
+/*  Horizontal  */
+
+@media screen and (min-width:50px) and (max-width:500px){
+    #whyme,
+    header h1 {
+        display: none;
+   }
+    
+}
+@media screen and (min-width:501px) and (max-width:960px){
+   #whyme,
+   header h1 {
+        display: none;
+   }
+   
+}
+@media screen and (min-width:960px){
+
+}
+
 
 
 
