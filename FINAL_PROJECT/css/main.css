@@ -95,7 +95,7 @@ header ul {
 
 header ul li {
     display: inline;
-    padding: 40px 0 40px 10px;
+    padding: 40px 0 40px 0px;
     font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
     font-size: 14pt;
 }
@@ -118,7 +118,7 @@ header ul li a:active {
 
 header ul li a {
     color: #33a1c9;
-    padding: 40px 5px 40px 5px;
+    padding: 40px 15px 40px 15px;
 }
 
 header {
@@ -141,6 +141,11 @@ h1 span {
     font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
     font-size: 24pt;
     font-weight: lighter;
+}
+
+.current {
+    color: #e6e6e6;
+    background-color: #2e2e2e;
 }
 
 /*=======   Footer   =======*/
@@ -172,6 +177,9 @@ footer ul li a:hover {
 
 footer p {
     text-align: center;
+    padding-bottom: 0;
+    margin: 0 auto;
+    clear: both;
 }
 
 #footerlinks {
@@ -181,6 +189,10 @@ footer p {
 
 footer ul li {
     display: inline;
+}
+
+center a {
+    color: #4d4d4d;
 }
 
 
@@ -266,7 +278,9 @@ h2 {
 /*                                            Portfolio.html                                      */
 /*================================================================================================*/
 
-
+#portfolio {
+    margin-top: 125px;
+}
 
 #portfolio ul {
     margin: 0;
@@ -290,7 +304,7 @@ h2 {
     width: 100px;
     height: 25px;
     font-size: 10pt;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     background-color: #ffc638;
     color: #323232;
     border: none;

@@ -23,6 +23,19 @@ $(document).ready(function(){
     
 });
 
+$(function(){
+  var windowHref = window.location.href;
+
+  $('a').each(function() {
+    var linkHref = $(this).prop('href');
+    if (windowHref.indexOf(linkHref) === 0) {
+      $(this).addClass('current');
+    }
+  });
+});
+
+
+
 function sortThumbnails(keyword){
     
     $('.thumbnail_container a.thumbnail').each(function(){
