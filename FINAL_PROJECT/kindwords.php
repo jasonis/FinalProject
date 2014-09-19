@@ -18,8 +18,13 @@
 
 <body>
     
-    <header class="navbar-inverse navbar-default navbar-fixed-top example" role="navigation">
-        <div class="navbar-header">
+    <header  id='fixed-header' class="navbar-inverse navbar-default navbar-fixed-top example" role="navigation">
+        
+        <div class='container'>
+            <h1>
+                <a href='index.php'><img src='images/logo.jpg' class='img-responsive' alt='text heading for Teri Lynn Photography'></a>
+            </h1>
+	    <div class="navbar-header">
 	        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
 		    <span class="sr-only">Toggle navigation</span>
 		    <span class="icon-bar"></span>
@@ -27,26 +32,23 @@
 		    <span class="icon-bar"></span>
 	        </button>
 	        <a href="#" class="navbar-brand scroll-top"></a>
+	    </div>
+            <ul id='main-nav' class='collapse navbar-collapse' role='tablist'>
+                <li>
+                    <a href='index.php'>Home</a>
+                </li>
+                <li>
+                    <a href='portfolio.php'>Portfolio</a>
+                </li>
+                <li>
+                    <a href='pricing.php'>Pricing</a>
+                </li>
+                <li>
+                    <a href='#' data-toggle="modal" data-target="#myModal">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class='container'>
-        <h1>
-            <a href='index.php'><img src='images/logo.jpg' alt='text heading for Teri Lynn Photography'></a>
-        </h1>
-        <ul id='main-nav' class='collapse navbar-collapse' role='tablist'>
-            <li>
-                <a href='index.php'>Home</a>
-            </li>
-            <li>
-                <a href='portfolio.php'>Portfolio</a>
-            </li>
-            <li>
-                <a href='pricing.php'>Pricing</a>
-            </li>
-            <li>
-                <a href='contact.php' data-toggle="modal" data-target="#myModal">Contact</a>
-            </li>
-        </ul>
-        </div>
+	
     </header>
     
     <section id='kindwords' class='container-fluid'>

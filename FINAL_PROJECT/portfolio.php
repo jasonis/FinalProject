@@ -16,6 +16,11 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    
+    
+    
     <script type='text/javascript' src='includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js'></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -24,8 +29,13 @@
 </head>
 
 <body>
-    <header class="navbar-inverse navbar-default navbar-fixed-top example" role="navigation">
-        <div class="navbar-header">
+    <header  id='fixed-header' class="navbar-inverse navbar-default navbar-fixed-top example" role="navigation">
+        
+        <div class='container'>
+            <h1>
+                <a href='index.php'><img src='images/logo.jpg' class='img-responsive' alt='text heading for Teri Lynn Photography'></a>
+            </h1>
+	    <div class="navbar-header">
 	        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
 		    <span class="sr-only">Toggle navigation</span>
 		    <span class="icon-bar"></span>
@@ -33,28 +43,24 @@
 		    <span class="icon-bar"></span>
 	        </button>
 	        <a href="#" class="navbar-brand scroll-top"></a>
+	    </div>
+            <ul id='main-nav' class='collapse navbar-collapse' role='tablist'>
+                <li>
+                    <a href='index.php'>Home</a>
+                </li>
+                <li>
+                    <a href='portfolio.php'>Portfolio</a>
+                </li>
+                <li>
+                    <a href='pricing.php'>Pricing</a>
+                </li>
+                <li>
+                    <a href='#' data-toggle="modal" data-target="#myModal">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class='container'>
-        <h1>
-            <a href='index.php'><img src='images/logo.jpg' alt='text heading for Teri Lynn Photography'></a>
-        </h1>
-        <ul id='main-nav' class='collapse navbar-collapse' role='tablist'>
-            <li>
-                <a href='index.php'>Home</a>
-            </li>
-            <li>
-                <a href='portfolio.php'>Portfolio</a>
-            </li>
-            <li>
-                <a href='pricing.php'>Pricing</a>
-            </li>
-            <li>
-                <a href='contact.php' data-toggle="modal" data-target="#myModal">Contact</a>
-            </li>
-        </ul>
-        </div>
+	
     </header>
-    
     
     <div id='portfolio' class='gallery'>
 	<div class='sorting'>
@@ -85,6 +91,7 @@
 		<div class='clear_both'></div>
 	    </div><!-- end .sorting-buttons -->
 	</div>
+		
 	<div class='photos'>
 	    <div class='thumbnail_container'>
 		<div hidden >
@@ -105,7 +112,7 @@
 		    <cms:editable name='portfolio_image15' type='image' label='seniors' />
 		    <cms:editable name='portfolio_image16' type='image' label='wedding' />
 		</div>
-		<a class='thumbnail' title='This is a caption for a wedding photo' href='images/port1.jpg' data-keywords='wedding engagement'><img class='img-responsive' src='<cms:show portfolio_image1 />'/></a>					
+		<a class='thumbnail' title='This is a caption for a childs photo'href='images/port1.jpg' data-keywords='wedding'><img class='img-responsive' src='<cms:show portfolio_image1 />'/></a>					
 		<a class='thumbnail' title='This is a caption for a childs photo'href='images/port2.jpg' data-keywords='children families'><img class='img-responsive' src='<cms:show portfolio_image2 />'/></a>					
 		<a class="thumbnail" title="This is a caption for a senior photo." href='images/port3.jpg' data-keywords="seniors"><img class='img-responsive' src='<cms:show portfolio_image3 />'/></a>
 		<a class="thumbnail" title="This is a caption for a senior photo." href='images/port4.jpg' data-keywords="seniors"><img class='img-responsive' src='<cms:show portfolio_image4 />'/></a>
@@ -120,12 +127,12 @@
 		<a class="thumbnail" title="This is a caption for a wedding photo" href='images/port13.jpg' data-keywords="wedding engagement"><img class='img-responsive' src='<cms:show portfolio_image13 />'/></a>
 		<a class="thumbnail" title="This is a caption for a childs photo" href='images/port14.jpg' data-keywords="children families"><img class='img-responsive' src='<cms:show portfolio_image14 />'/></a>
 		<a class="thumbnail" title="This is a caption for a senior photo" href='images/port15.jpg' data-keywords="seniors"><img class='img-responsive' src='<cms:show portfolio_image15 />'/></a>
-		<a class="thumbnail" title="This is a caption for a wedding photo" href='images/port16.jpg' data-keywords="wedding engagement"><img class='img-responsive' src='<cms:show portfolio_image16 />'/></a>
+		<a class="thumbnail" title="This is a caption for a wedding photo" href='images/port16.jpg' data-keywords="wedding engagement"><img class='img-responsive' src='<cms:show portfolio_image16 />'/></a> 
 	    </div>
 		
 	</div>
     </div>
-    
+
     
     <!-- style for captcha  -->
     <script type="text/javascript">
@@ -215,6 +222,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+
     <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
     <script type='text/javascript' src='js/main.js'></script>
 </body>

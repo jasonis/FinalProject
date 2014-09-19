@@ -2,11 +2,30 @@
 
 var thumbnailSpacing = 25;
 
+
 $(document).ready(function(){
-
-   
-
     
+/*==  accordian function for mobile version of pricing page  ==*/
+    $(function () {
+        $("#collapse li").children('ul').hide();
+        $("#collapse li").on('click', function (event) {
+            $(this).children('ul').stop().slideToggle(350);
+            $(this).toggleClass("open");
+            event.stopPropagation();
+        });
+    });
+
+    $(function () {
+        $("#collapse-faq li").children('ul').hide();
+        $("#collapse-faq li").on('click', function (event) {
+            $(this).children('ul').stop().slideToggle(350);
+            $(this).toggleClass("open");
+            event.stopPropagation();
+        });
+    });
+    
+/*  sorting the photos in the gallery  */
+
     $('a.sortLink').on('click',function(e){
          e.preventDefault();
          $('a.sortLink').removeClass('selected');
@@ -14,15 +33,26 @@ $(document).ready(function(){
          var keyword = $(this).attr('data-keyword');
          sortThumbnails(keyword);
     });
-    
-    
+       
     $('.gallery .sorting').css('margin-bottom',window.thumbnailSpacing+'px');
     $('.thumbnail_container a.thumbnail').addClass('showMe');
     
-    positionThumbnails();
+    positionThumbnails();    
     
 });
 
+
+
+/*=================== accordian section on pricing page  ====================*/
+$(function () {   
+    $('.reveal').click(function() {
+        $(this).children('ul').slideToggle();
+    });
+});
+
+
+
+/* ========== displays what page you are currently on in the navbar  =============*/
 $(function(){
   var windowHref = window.location.href;
 
@@ -35,7 +65,7 @@ $(function(){
 });
 
 
-
+/* ==========sorting the thumbnails in the portfolio gallery  ==============*/
 function sortThumbnails(keyword){
     
     $('.thumbnail_container a.thumbnail').each(function(){
@@ -56,8 +86,6 @@ function sortThumbnails(keyword){
     });
     positionThumbnails();
 }
-
-
 
 function positionThumbnails(){
     
@@ -98,9 +126,16 @@ function positionThumbnails(){
         var newHeight = thumbnail_R + thumbnailHeight;
         $('.thumbnail_container').css({'width':newWidth+'px','height':newHeight+'px'});
         
-    });    
+    });
+    
+    var sortingWidth = $('.thumbnail_container').width() / thumbnailWidth;
+    var newWidth = sortingWidth * thumbnailWidth - window.thumbnailSpacing;
+    $('.sorting').css('width', newWidth + 'px');
+    
     
 }
+
+/*  adds validation to the contact form  */
 
    $('#loginForm').bootstrapValidator({
         message: 'This value is not valid',
@@ -110,17 +145,17 @@ function positionThumbnails(){
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            username: {
+            name: {
                 validators: {
                     notEmpty: {
-                        message: 'The username is required'
+                        message: 'The name is required'
                     }
                 }
             },
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'The password is required'
+                        message: 'The email is required'
                     }
                 }
             }
@@ -128,8 +163,24 @@ function positionThumbnails(){
     });
    
    $('#myModal').on('shown.bs.modal', function() {
-    $('#loginForm').bootstrapValidator('resetForm', true);
+        $('#loginForm').bootstrapValidator('resetForm', true);
    });
+ /*  
+   document.getElementById("#aboutme").onclick = function() {
+    this.style.height = 'auto';
+}
+*/
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
 
 
 

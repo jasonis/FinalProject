@@ -17,8 +17,13 @@
 </head>
 
 <body>
-    <header class="navbar-inverse navbar-default navbar-fixed-top example" role="navigation">
-        <div class="navbar-header">
+    <header  id='fixed-header' class="navbar-inverse navbar-default navbar-fixed-top example" role="navigation">
+        
+        <div class='container'>
+            <h1>
+                <a href='index.php'><img src='images/logo.jpg' class='img-responsive' alt='text heading for Teri Lynn Photography'></a>
+            </h1>
+	    <div class="navbar-header">
 	        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
 		    <span class="sr-only">Toggle navigation</span>
 		    <span class="icon-bar"></span>
@@ -26,26 +31,23 @@
 		    <span class="icon-bar"></span>
 	        </button>
 	        <a href="#" class="navbar-brand scroll-top"></a>
+	    </div>
+            <ul id='main-nav' class='collapse navbar-collapse' role='tablist'>
+                <li>
+                    <a href='index.php'>Home</a>
+                </li>
+                <li>
+                    <a href='portfolio.php'>Portfolio</a>
+                </li>
+                <li>
+                    <a href='pricing.php'>Pricing</a>
+                </li>
+                <li>
+                    <a href='#' data-toggle="modal" data-target="#myModal">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class='container'>
-        <h1>
-            <a href='index.php'><img src='images/logo.jpg' class='img-responsive' alt='text heading for Teri Lynn Photography'></a>
-        </h1>
-        <ul id='main-nav' class='collapse navbar-collapse' role='tablist'>
-            <li>
-                <a href='index.php'>Home</a>
-            </li>
-            <li>
-                <a href='portfolio.php'>Portfolio</a>
-            </li>
-            <li>
-                <a href='pricing.php'>Pricing</a>
-            </li>
-            <li>
-                <a href='contact.php' data-toggle="modal" data-target="#myModal">Contact</a>
-            </li>
-        </ul>
-        </div>
+	
     </header>
     
     <section id='pricingtable' class='container-fluid'>
@@ -168,7 +170,7 @@
 		</div>
 	    </li>
 	    </div>
-	</ul>
+	</ul>	
     </section>
     
     <section class='container-fluid cyo'>
@@ -215,6 +217,73 @@
 	</div>-->
     </section>
     
+    <ul id="collapse">
+	<h2>PHOTO SESSION PRICING</h2>
+	<li class='essential-collapse'>Essentials
+	    <ul>
+		<li><h4>WEDDING</h4>
+		    <ul>
+			<li>$997</li>
+			<p>Up to 3 hours</p>
+			<p>Over 100 high res images on DVD</p>
+			<p>11x14 wall print</p>
+			<p>Private online gallery</p>
+		    </ul>
+		</li>
+		<li><h4>HIGH SCHOOL SENIOR</h4>
+		    <ul>
+			<li>$75</li>
+			<p>Up to 1 hour</p>
+			<p>One outfit</p>
+			<p>One location</p> 
+		    </ul>
+		</li>
+	    </ul>
+	</li>
+	<li class='plus-collapse'>Plus
+	    <ul>
+		<li><h4>WEDDING</h4>
+		    <ul>
+			<li>$1697</li>
+			<p>Up to 6 hours</p>
+			<p>200 to 300 high res images on DVD</p>
+			<p>11x14 &amp; 8x10 Wall Prints</p>
+			<p>Private online gallery</p>
+		    </ul>
+		</li>
+		<li><h4>HIGH SCHOOL SENIOR</h4>
+		    <ul>
+			<li>$100</li>
+			<p>Up to 2 hours</p>
+			<p>Two outfits</p>
+			<p>One location</p>
+		    </ul>
+		</li>
+	    </ul>
+	</li>
+	<li class='luxury-collapse'>Luxury
+	    <ul>
+		<li><h4>WEDDING</h4>
+		    <ul>
+			<li>$1997</li>
+			<p>Up to 8 hours</p>
+			<p>300 to 400 high res images on DVD</p>
+			<p>16x20 Wall Print</p>
+			<p>Private online gallery</p>
+		    </ul>
+		</li>
+		<li><h4>HIGH SCHOOL SENIOR</h4>
+		    <ul>
+			<li>$150</li>
+			<p>Up to 4 hours</p>
+			<p>Unlimited outfits</p>
+			<p>Unlimited locations</p>
+		    </ul>
+		</li>
+	    </ul>
+	</li>
+    </ul>
+    
     <!-- style for captcha  -->
     <script type="text/javascript">
     var RecaptchaOptions = {
@@ -249,7 +318,8 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-12 floating-label-form-group">                   
-                        <!-- script for captcha -->
+                        
+			<!-- script for captcha -->
                         <script type="text/javascript"
                           src="http://www.google.com/recaptcha/api/challenge?k=6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2">
                         </script>
@@ -260,7 +330,8 @@
                            </textarea>
                            <input type="hidden" name="recaptcha_response_field"
                                value="manual_challenge">
-                        </noscript>           
+                        </noscript>
+			
                     </div>
                 </div><!-- end .row -->
                 <div class=" form-group modal-footer">
@@ -272,6 +343,10 @@
         </div><!-- end .modal-content  --> 
       </div><!-- end .modal-dialog  -->
     </div><!-- end .modal  -->
+    
+    
+    
+    
     
     <footer>
         <ul id='footerpages'>
