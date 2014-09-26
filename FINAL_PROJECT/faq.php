@@ -182,10 +182,10 @@
                     <div class="form-group col-xs-12 floating-label-form-group">                   
                         <!-- script for captcha -->
                         <script type="text/javascript"
-                          src="http://www.google.com/recaptcha/api/challenge?k=6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2">
+                          src="http://www.google.com/recaptcha/api/challenge?k=6Ld5kfoSAAAAAHTIPTb80gjKuixHFGULdkZYGyWl">
                         </script>
                         <noscript>
-                           <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2"
+                           <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Ld5kfoSAAAAAHTIPTb80gjKuixHFGULdkZYGyWl"
                               height="300" width="500" frameborder="0"></iframe><br>
                            <textarea name="recaptcha_challenge_field" rows="3" cols="40">
                            </textarea>

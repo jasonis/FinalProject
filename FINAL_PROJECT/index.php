@@ -52,15 +52,15 @@
 	
     </header>
 
-    <section id='ctaphoto' class="container">
+    <section id='ctaphoto' class="container box" scrollSpeed="5.5">
         <div class='row'>
             <img class='img-responsive col-md-12' src='images/sleepycover.jpg' alt='baby in fathers arm'>
         </div>
     </section>
 
-    <section id='whyme' class='container-fluid'>
+    <section id='whyme' class='container-fluid box' scrollSpeed="2.5">
         <h2>
-            Why Me
+            Why Me&#63;
         </h2>
         <div class='row'>
             <div class='col-md-4'>
@@ -78,7 +78,7 @@
         </div><!-- end .row -->
     </section>
     
-    <section id='recentprojects' class='container-fluid'>
+    <section id='recentprojects' class='container-fluid box' scrollSpeed="6.5">
         <h2>
             Recent Projects
         </h2>
@@ -103,7 +103,7 @@
 	
     </section>
     
-    <section id='aboutme' class='container-fluid'>
+    <section id='aboutme' class='container-fluid box' scrollSpeed="6">
         <h2>
             About Me
         </h2>
@@ -214,10 +214,10 @@
                     <div class="form-group col-xs-12 floating-label-form-group">                   
                         <!-- script for captcha -->
                         <script type="text/javascript"
-                          src="http://www.google.com/recaptcha/api/challenge?k=6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2">
+                          src="http://www.google.com/recaptcha/api/challenge?k=6Ld5kfoSAAAAAHTIPTb80gjKuixHFGULdkZYGyWl" <!--  6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2  -->
                         </script>
                         <noscript>
-                           <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2"
+                           <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Ld5kfoSAAAAAHTIPTb80gjKuixHFGULdkZYGyWl"
                               height="300" width="500" frameborder="0"></iframe><br>
                            <textarea name="recaptcha_challenge_field" rows="3" cols="40">
                            </textarea>

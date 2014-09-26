@@ -12,6 +12,7 @@ html {
 body {
     padding-top: 100px;
     background-color: #000;
+    position: relative;
 }
 
 @font-face {
@@ -149,12 +150,14 @@ h1 span {
 }
 
 /*=======   Footer   =======*/
+
+
 footer {
-    height: 50px;
     color: #4d4d4d;
-    padding: 20px 0 0 0;
-    margin: 0 7.3018081% 25px 7.3018081%;
-    
+    bottom: -40px;
+    background-color: #000;
+    z-index: 1;
+    position: inherit;
 }
 
 footer ul li a {
@@ -204,12 +207,22 @@ center a {
 #ctaphoto {    
     width: 100%;
     margin: 0;
+    height: 100%;
+    z-index: 3;
+    padding-bottom: 50px;
 }
 
 #ctaphoto {
     width: 100%;
     margin: auto;
 }
+/*
+#ctaphoto {
+    height: 450px;
+    position: fixed;
+    
+}
+*/
 
 /*=======   Why Me   =======*/
 
@@ -221,11 +234,19 @@ h2 {
 }
 
 #whyme {
-    margin: 25px 7.3018081% 0 7.3018081%;
+    margin: 0px 7.3018081% 75px 7.3018081%;/*original height 25px original width 7.3018081%*/
+    background-color: #000;
+    width: auto;
+    z-index: 1;
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
 }
 
+
+
 #whyme .row .col-md-4 {
-    padding: 0 0 0 9%;/*60px*/
+    padding: 0 9% 0 9%;/*60px*/
 }
 
 #whyme p {
@@ -237,14 +258,19 @@ h2 {
 }
 
 #whyme div div p {
-    width: 200px;
+    width: 100%;
     padding: 0;
     
 }
 
 /*======= Recent Projects   =======*/
 #recentprojects {
-    margin: 25px 7.3018081% 0 7.3018081%;
+    margin: 0 7.3018081% 50px 7.3018081%;
+    background-color: #000;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 #recentprojects .row {
@@ -252,8 +278,8 @@ h2 {
 }
 
 /*======= About Me   ========*/
-#aboutme img {
-    width: 375px;
+
+#aboutme img {  
     padding-bottom: 20px;
 }
 
@@ -263,8 +289,21 @@ h2 {
     color: #989898;
 }
 
+#aboutme ul {
+    padding: 0 15px 0 15px;
+}
+
+#aboutme ul ul {
+    padding: 0;
+}
+
 #aboutme {
-    margin:25px 105px 50px 105px;
+    margin: 0 105px 100px 105px;
+    background-color: #000;
+    z-index: 9;
+    height: 600px;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 #aboutme h3 {
@@ -288,6 +327,7 @@ h2 {
 #portfolio ul {
     margin: 0;
     padding: 0 0 0 0;
+    list-style-type: none;
 }
 
 #portfolio ul:last-child {
@@ -296,15 +336,12 @@ h2 {
 
 #portfolio ul li {
     display: inline-block;
-    padding-right: 2.5%;
-}
-
-#portfolio ul li:last-child{
-    padding-right: 0px;
+    list-style-type: none;
 }
 
 #portfolio ul li button {
-    width: 100px;
+    width: auto;
+    padding: 5px 15px 0 15px;
     height: 25px;
     font-size: 10pt;
     /*border-radius: 5px;*/
@@ -331,33 +368,32 @@ img.background {
     padding: 0;
     border: none;
 }
-.thumbnail-container,
+
 .photos {
-    margin: 0 0 0 15.14236%;/*13.88888%*/
-    padding: 0 0 0 13.88888%;
+    margin: 0 auto;/*13.88888%  15.14236%*/
 }
 
 .sorting {
     text-align: center;
-    margin: 0 0 0 17.14236%;
+    margin: 0 auto;/* 17.14236% */
 }
 
-.gallery {
-    width: 100%;
-    margin: 0px auto 100px auto;
-    position: relative;
+.sorting-buttons ul li {
+    padding: 0;
 }
+
+
 
 .gallery .sorting div {
     margin: 10px 0 10px 0px;
 }
 
-.gallery .photos {
-    margin: 0 0 0 40px;
-}
+
 
 .gallery .photos .thumbnail_container {
     position: relative;
+    width: 1220px;
+    margin: 0 auto;
 }
 
 .gallery .photos .thumbnail_container a.thumbnail {
@@ -405,7 +441,7 @@ img.background {
     color: #888;
 }
 
-ul li {
+ ul li {
     color: #ebebeb;
     list-style-type: none;
     font-size: 1.5em;/*18pt*/
@@ -526,6 +562,14 @@ ul li {
     color: #979797;
 }
 
+#kindwords img {
+    margin-bottom: 75px;
+}
+
+#kindwords h2 {
+    margin-bottom: 25px;
+}
+
 /*================================================================================================*/
 /*                                           FAQ.html                                             */
 /*================================================================================================*/
@@ -536,7 +580,7 @@ ul li {
  
  #faq  ul li {
     font-family: 'Helvetica Neue, Helvetica, Liberation Sans, Arial', sans-serif;
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: lighter;
     color: #979797;
 }
@@ -567,6 +611,14 @@ ul li {
         padding: 5px 10% 5px 10%;
    }
    
+   #collapse-faq li ul li {
+        padding: 5px 0 5px 25px;
+   }
+   
+   #collapse-faq li ul {
+        padding: 0;
+   }
+   
    #collapse-faq h4 {
     color: #dbdbdb;
    }
@@ -581,6 +633,7 @@ ul li {
    .luxury-collapse li ul li {
         color: #000;
    }
+   
 
 /*================================================================================================*/
 /*                                             Contact                                            */
@@ -595,7 +648,7 @@ ul li {
 }
 
 .modal-content {
-    background-color: #ececec;
+    background-color: #6c6c6c;
     /*background-image: url('../images/contactTexture.jpg');*/
     background-size: 100% 100%;
     width: 760px;
@@ -701,7 +754,7 @@ ul li {
    #aboutme {
         margin: 0 auto;
         padding: 20px;
-        overflow: hidden;
+        overflow: inherit;
    }
    
    .sign button {
@@ -769,6 +822,11 @@ ul li {
         padding: 5px 0 5px 0;
         margin: 0;
         
+   }
+   
+   footer {
+        bottom: auto;
+        margin: 350px 0 0 0;
    }
    
     #footerpages,
@@ -979,6 +1037,11 @@ ul li {
     width: 175.5px;/*292.5px*/
     height: 138.75px;/*231.25px*/
     }
+    
+    #portfolio {
+        margin: 0 auto;
+    }
+
    
 }
 

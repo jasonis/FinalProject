@@ -5,6 +5,17 @@ var thumbnailSpacing = 25;
 
 $(document).ready(function(){
     
+/*=== adjust scroll speed for parallax effect ===*/
+    $(function(){
+        $(window).scroll(function(){
+          $('.box').each(function(){
+            $(this).css('margin-top', - $(window).scrollTop() / parseInt($(this).attr('scrollSpeed')));
+          });
+        });
+    })
+    
+    
+    
 /*==  accordian function for mobile version of pricing page  ==*/
     $(function () {
         $("#collapse li").children('ul').hide();

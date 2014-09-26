@@ -18,9 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/classie.js"></script>
-    
-    
-    
+      
     <script type='text/javascript' src='includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js'></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -112,22 +110,22 @@
 		    <cms:editable name='portfolio_image15' type='image' label='seniors' />
 		    <cms:editable name='portfolio_image16' type='image' label='wedding' />
 		</div>
-		<a class='thumbnail' title='This is a caption for a childs photo'href='images/port1.jpg' data-keywords='wedding'><img class='img-responsive' src='<cms:show portfolio_image1 />'/></a>					
-		<a class='thumbnail' title='This is a caption for a childs photo'href='images/port2.jpg' data-keywords='children families'><img class='img-responsive' src='<cms:show portfolio_image2 />'/></a>					
-		<a class="thumbnail" title="This is a caption for a senior photo." href='images/port3.jpg' data-keywords="seniors"><img class='img-responsive' src='<cms:show portfolio_image3 />'/></a>
-		<a class="thumbnail" title="This is a caption for a senior photo." href='images/port4.jpg' data-keywords="seniors"><img class='img-responsive' src='<cms:show portfolio_image4 />'/></a>
-		<a class="thumbnail" title="This is a caption for a senior photo" href='images/port5.jpg' data-keywords="seniors"><img class='img-responsive' src='<cms:show portfolio_image5 />'/></a>
-		<a class="thumbnail" title="This is a caption for a senior photo" href='images/port6.jpg' data-keywords="seniors"><img class='img-responsive' src='<cms:show portfolio_image6 />'/></a>
-		<a class="thumbnail" title="This is a caption for a childs photo" href='images/port7.jpg' data-keywords="children families"><img class='img-responsive' src='<cms:show portfolio_image7 />'/></a>
-		<a class="thumbnail" title="This is a caption for a family photo" href='images/port8.jpg' data-keywords="families"><img class='img-responsive' src='<cms:show portfolio_image8 />'/></a>
-		<a class="thumbnail" title="This is a caption for a childs photo" href='images/port9.jpg' data-keywords="children families"><img class='img-responsive' src='<cms:show portfolio_image9 />'/></a>
-		<a class="thumbnail" title="This is a caption for a family photo" href='images/port10.jpg' data-keywords="families"><img class='img-responsive' src='<cms:show portfolio_image10 />'/></a>
-		<a class="thumbnail" title="This is a caption for a senior photo" href='images/port11.jpg' data-keywords="seniors"><img class='img-responsive' src='<cms:show portfolio_image11 />'/></a>
-		<a class="thumbnail" title="This is a caption for a newborn photo" href='images/port12.jpg' data-keywords="newborn families"><img class='img-responsive' src='<cms:show portfolio_image12 />'/></a>
-		<a class="thumbnail" title="This is a caption for a wedding photo" href='images/port13.jpg' data-keywords="wedding engagement"><img class='img-responsive' src='<cms:show portfolio_image13 />'/></a>
-		<a class="thumbnail" title="This is a caption for a childs photo" href='images/port14.jpg' data-keywords="children families"><img class='img-responsive' src='<cms:show portfolio_image14 />'/></a>
-		<a class="thumbnail" title="This is a caption for a senior photo" href='images/port15.jpg' data-keywords="seniors"><img class='img-responsive' src='<cms:show portfolio_image15 />'/></a>
-		<a class="thumbnail" title="This is a caption for a wedding photo" href='images/port16.jpg' data-keywords="wedding engagement"><img class='img-responsive' src='<cms:show portfolio_image16 />'/></a> 
+		<a class='thumbnail' title='This is a caption for a childs photo' data-keywords='wedding' data-toggle="modal" data-target="#myPortModal1"><img class='img-responsive' src='<cms:show portfolio_image1 />'/></a>					
+		<a class='thumbnail' title='This is a caption for a childs photo' data-keywords='children families newborn' data-toggle="modal" data-target="#myPortModal2"><img class='img-responsive' src='<cms:show portfolio_image2 />'/></a>					
+		<a class="thumbnail" title="This is a caption for a senior photo." data-keywords="seniors" data-toggle="modal" data-target="#myPortModal3"><img class='img-responsive' src='<cms:show portfolio_image3 />'/></a>
+		<a class="thumbnail" title="This is a caption for a senior photo." data-keywords="seniors" data-toggle="modal" data-target="#myPortModal4"><img class='img-responsive' src='<cms:show portfolio_image4 />'/></a>
+		<a class="thumbnail" title="This is a caption for a senior photo"  data-keywords="seniors" data-toggle="modal" data-target="#myPortModal5"><img class='img-responsive' src='<cms:show portfolio_image5 />'/></a>
+		<a class="thumbnail" title="This is a caption for a senior photo"  data-keywords="seniors" data-toggle="modal" data-target="#myPortModal6"><img class='img-responsive' src='<cms:show portfolio_image6 />'/></a>
+		<a class="thumbnail" title="This is a caption for a childs photo"  data-keywords="children families" data-toggle="modal" data-target="#myPortModal7"><img class='img-responsive' src='<cms:show portfolio_image7 />'/></a>
+		<a class="thumbnail" title="This is a caption for a family photo"  data-keywords="families" data-toggle="modal" data-target="#myPortModal8"><img class='img-responsive' src='<cms:show portfolio_image8 />'/></a>
+		<a class="thumbnail" title="This is a caption for a childs photo"  data-keywords="children families newborn" data-toggle="modal" data-target="#myPortModal9"><img class='img-responsive' src='<cms:show portfolio_image9 />'/></a>
+		<a class="thumbnail" title="This is a caption for a family photo"  data-keywords="families" data-toggle="modal" data-target="#myPortModal10"><img class='img-responsive' src='<cms:show portfolio_image10 />'/></a>
+		<a class="thumbnail" title="This is a caption for a senior photo"  data-keywords="seniors" data-toggle="modal" data-target="#myPortModal11"><img class='img-responsive' src='<cms:show portfolio_image11 />'/></a>
+		<a class="thumbnail" title="This is a caption for a newborn photo"  data-keywords="newborn families" data-toggle="modal" data-target="#myPortModal12"><img class='img-responsive' src='<cms:show portfolio_image12 />'/></a>
+		<a class="thumbnail" title="This is a caption for a wedding photo"  data-keywords="wedding engagement" data-toggle="modal" data-target="#myPortModal13"><img class='img-responsive' src='<cms:show portfolio_image13 />'/></a>
+		<a class="thumbnail" title="This is a caption for a childs photo"  data-keywords="children families newborn" data-toggle="modal" data-target="#myPortModal14"><img class='img-responsive' src='<cms:show portfolio_image14 />'/></a>
+		<a class="thumbnail" title="This is a caption for a senior photo"  data-keywords="seniors" data-toggle="modal" data-target="#myPortModal15"><img class='img-responsive' src='<cms:show portfolio_image15 />'/></a>
+		<a class="thumbnail" title="This is a caption for a wedding photo"  data-keywords="wedding engagement" data-toggle="modal" data-target="#myPortModal16"><img class='img-responsive' src='<cms:show portfolio_image16 />'/></a> 
 	    </div>
 		
 	</div>
@@ -141,7 +139,7 @@
     };
     </script>
     
-    <!-- Modal -->
+    <!-- Contact Me Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -170,10 +168,10 @@
                     <div class="form-group col-xs-12 floating-label-form-group">                   
                         <!-- script for captcha -->
                         <script type="text/javascript"
-                          src="http://www.google.com/recaptcha/api/challenge?k=6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2">
+                          src="http://www.google.com/recaptcha/api/challenge?k=6Ld5kfoSAAAAAHTIPTb80gjKuixHFGULdkZYGyWl">
                         </script>
                         <noscript>
-                           <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LexjfkSAAAAAMh3aiaztOHEF9X_1L_PYDzRVVh2"
+                           <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Ld5kfoSAAAAAHTIPTb80gjKuixHFGULdkZYGyWl"
                               height="300" width="500" frameborder="0"></iframe><br>
                            <textarea name="recaptcha_challenge_field" rows="3" cols="40">
                            </textarea>
@@ -187,6 +185,216 @@
                 </div>
             
             </form>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    
+    <!--  Photo gallery modals  --> 
+    <div class="modal fade"  id='myPortModal1' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port1.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->   
+    <div class="modal fade"  id='myPortModal2' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port2.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->   
+    <div class="modal fade"  id='myPortModal3' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port3.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal4' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port4.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal5' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port5.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal6' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port6.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal7' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port7.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal8' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port8.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal9' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port9.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal10' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port10.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal11' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port11.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal12' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port12.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal13' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port13.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal14' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port14.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal15' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port15.jpg' /></p>
+          </div><!-- end .modal-body  -->
+        </div><!-- end .modal-content  --> 
+      </div><!-- end .modal-dialog  -->
+    </div><!-- end .modal  -->
+    <div class="modal fade"  id='myPortModal16' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+	    <p><img src='images/port16.jpg' /></p>
           </div><!-- end .modal-body  -->
         </div><!-- end .modal-content  --> 
       </div><!-- end .modal-dialog  -->
